@@ -5,14 +5,16 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" type="text/css" media="screen" href="./styles.css">
+  <link rel="stylesheet" type="text/css" media="screen" href="../codigo-otros-2/styles.css">   <!-- valide la ruta al CSS-->
   <title>Formulario</title>
 </head>
+
 <body>
   <h1>Bienvenidos a mi fiesta</h1>
   <h2>Por favor, confirmar asistencia:</h2>
 
-  <form class="formulario">
+  <!-- Agregué un ID al formulario para poder seleccionarlo en JavaScript -->
+  <form id="formulario" class="formulario">
     Nombre <input type="text" name="name" id="name">
     <br />
     Edad <input type="number" name="age" id="age">
@@ -29,12 +31,12 @@
     <input type="submit">
   </form>
 
-  <div>
+  <!-- Agregué el id "lista-de-invitados" para que el JS pueda agregar elementos aquí -->
+  <div id="lista-de-invitados">
     <h2>Lista de invitados</h2>
-
   </div>
 
-  <script src="../formulario.js"></script>
+  <script src="../codigo-otros-2/formulario.js"></script>    !<!-- Valide la ruta al archivo JavaScript -->
 </body>
 
 </html>
